@@ -26,6 +26,7 @@ class ilMimeTypeUtil {
 	const APPLICATION__DXF = 'application/dxf';
 	const APPLICATION__ECMASCRIPT = 'application/ecmascript';
 	const APPLICATION__ENVOY = 'application/envoy';
+	const APPLICATION__EPUB = 'application/epub+zip';
 	const APPLICATION__EXCEL = 'application/excel';
 	const APPLICATION__FONT_WOFF = 'application/font-woff';
 	const APPLICATION__FRACTALS = 'application/fractals';
@@ -632,6 +633,7 @@ class ilMimeTypeUtil {
 		'elc' => self::APPLICATION__X_ELC,
 		'env' => self::APPLICATION__X_ENVOY,
 		'eps' => self::APPLICATION__POSTSCRIPT,
+		'epub' => self::APPLICATION__EPUB,
 		'es' => self::APPLICATION__X_ESREHBER,
 		'etx' => self::TEXT__X_SETEXT,
 		'evy' => array(
@@ -1445,7 +1447,7 @@ class ilMimeTypeUtil {
 	 * @param $path_to_file
 	 */
 	protected function __construct($path_to_file) {
-		if (strpos($path_to_file, 'http://') || strpos($path_to_file, 'https://')) {
+		if (strpos($path_to_file, 'http://') !== false || strpos($path_to_file, 'https://') !== false) {
 			$this->setExternal(true);
 		}
 		$parts = parse_url($path_to_file);
@@ -1498,9 +1500,11 @@ class ilMimeTypeUtil {
 	 *
 	 * @return string
 	 */
-	public static function lookupMimeType($path_to_file, $fallback = self::APPLICATION__OCTET_STREAM, $a_external = false) {
+	public static function lookupMimeType($path_to_file, $fallback = self::APPLICATION__OCTET_STREAM, $a_external = null) {
 		$obj = new self($path_to_file);
-		$obj->setExternal($a_external);
+		if ($a_external !== null) {
+			$obj->setExternal($a_external);
+		}
 		$obj->setFallback($fallback);
 
 		return $obj->get();

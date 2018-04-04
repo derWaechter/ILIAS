@@ -5922,7 +5922,7 @@ exc#:#exc_edit_assignments#:#Übungseinheiten bearbeiten
 exc#:#exc_edit_submission#:#Eingereichte Lösungen ändern
 exc#:#exc_ended_on#:#Beendet am
 exc#:#exc_export_excel#:#Export (Excel)
-exc#:#exc_fb_files#:#Dateien vom Tutor
+exc#:#exc_fb_files#:#Bewertungsdateien
 exc#:#exc_grades#:#Notenübersicht
 exc#:#exc_grades_overview#:#Notenübersicht
 exc#:#exc_hand_in#:#Datei abgeben
@@ -14164,3 +14164,6 @@ content#:#cont_lpe_openid_login_form#:#OpenId-Loginmaske
 content#:#cont_lpe_registration_link#:#Link zur Neuanmeldung
 content#:#cont_lpe_shib_login_form#:#Shibboleth-Loginmaske
 content#:#cont_lpe_user_agreement_link#:#Link zur Benutzervereinbarung
+common#:#fold_copy_threads_info#:#Bitte wählen Sie aus, welche Materialien kopiert, verknüpft oder aber beim Kopiervorgang ausgelassen werden sollen.
+common#:#obj_fold_duplicate#:#Ordner kopieren
+common#:#fold_wizard_page#:#Ordner kopieren (Schritt 2/2)
