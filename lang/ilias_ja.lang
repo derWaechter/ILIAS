@@ -1,4 +1,4 @@
-/* Copyright (c) 1998-2015 ILIAS open source e-Learning e.V., Extended GPL, see docs/LICENSE */
+/* Copyright (c) 1998-2018 ILIAS open source e-Learning e.V., Extended GPL, see docs/LICENSE */
 /**
 * ILIAS language file (All entries)
 *
@@ -513,6 +513,7 @@ assessment#:#code#:#コード
 assessment#:#codebase#:#コードベース
 assessment#:#concatenation#:#結び付け
 assessment#:#conf_delete_pass#:#パスを本当に削除しますか?
+assessment#:#conf_delete_pass_ctm#:#前回の回答を削除してもよろしいですか。
 assessment#:#confirm_delete_all_user_data#:#本当に全ユーザのテストデータを削除しますか?
 assessment#:#confirm_delete_single_user_data#:#本当に選択したユーザのテストデータを削除しますか?
 assessment#:#confirm_sync_questions#:#変更した問題は実際のテストで使用するために作成したコピーです。オリジナルの問題も合わせて変更しますか?
@@ -628,6 +629,7 @@ assessment#:#extratime#:#延長時間
 assessment#:#factor#:#要因
 assessment#:#failed_official#:#不合格です
 assessment#:#failed_short#:#不合格
+assessment#:#false#:#False
 assessment#:#feedback_all#:#全解答の特定フィードバックの回答を表示
 assessment#:#feedback_answers#:#問題の各答案に対するフィードバック
 assessment#:#feedback_checked#:#全選択または選択された解答の特定のフィードバック解答を表示
@@ -756,6 +758,7 @@ assessment#:#log_selected_user_data_removed#:#ユーザ%sのテストデータ�
 assessment#:#log_user_answered_question#:#ユーザは問題に解答して%s点獲得しました
 assessment#:#log_user_entered_values#:#ユーザが値を入力しました
 assessment#:#log_user_not_entered_values#:#ユーザは値を未入力です
+assessment#:#log_user_solution_willingly_deleted#:#ユーザは回答を削除しました。
 assessment#:#log_wrong_test_password_entered#:#受講者は間違ったテストパスワードを入力しました。入力: '%s'
 assessment#:#longmenu_text#:#長いメニューテキスト
 assessment#:#mailnottype#:#ユーザがテスト終了しても通知を送る
@@ -1134,6 +1137,7 @@ assessment#:#toplist_col_score#:#点数
 assessment#:#toplist_col_wtime#:#処理時間
 assessment#:#toplist_top_n_results#:#上位%sの結果
 assessment#:#toplist_your_result#:#順位
+assessment#:#true#:#True
 assessment#:#tst_access_code_created#:#テスト結果への恒久アクセスと、このテストを再開可能性を提供するためにユニークなテストのアクセス コードが作成されました。以降のアクションはこのコードを使って書いてください。
 assessment#:#tst_activate_skill_service#:#能力サービスを有効化
 assessment#:#tst_activate_skill_service_desc#:#新規タブ'能力'が表示されます。このタブには問題が能力へ割り当てられてしきい値は能力の一定レベル達成用に帰属します。
@@ -1920,7 +1924,7 @@ badge#:#badge_notification_reason#:#プロファイルへバッジ追加が可�
 badge#:#badge_notification_subject#:#バッジを受領しました
 badge#:#badge_obi_activate#:#Mozilla Open Badges Infrastructureを有効にします
 badge#:#badge_obi_activate_info#:#ユーザはiliasからバッジをエクスポートできます。他のwenアプリケーションへ認定を提供するためにバッジを利用することができます。
-badge#:#badge_obi_contact#:#Email連絡
+badge#:#badge_obi_contact#:#連絡先メールアドレス
 badge#:#badge_obi_contact_info#:#このE-mailアドレスはバッジの背面以外は表示されません。
 badge#:#badge_obi_organisation#:#組織
 badge#:#badge_obi_organisation_info#:#このエントリーはバッジの発行者として表示されｒます。
@@ -2053,6 +2057,7 @@ blog#:#blog_authors#:#著者
 blog#:#blog_back_to_blog_owner#:#ブログを編集
 blog#:#blog_banner#:#ブログバナー
 blog#:#blog_change_notification_body_approve#:#次のブログは承認が必要です。
+blog#:#blog_change_notification_body_comment#:#次のブログ投稿へコメントがありました。
 blog#:#blog_change_notification_body_new#:#次のブログ投稿が作成されました
 blog#:#blog_change_notification_body_update#:#次のブログ投稿が更新されました
 blog#:#blog_change_notification_link#:#URL
@@ -2482,7 +2487,7 @@ chatroom#:#enable_smilies#:#スマイルを有効
 chatroom#:#end_whisper#:#キャンセル
 chatroom#:#enter#:#チャットルームを入力
 chatroom#:#error_log#:#チャットサーバError-Log
-chatroom#:#hint_display_past_msgs#:#ルーム入場した際に表示する過去のメッセージ数。値を"0"にすると機能しません。
+chatroom#:#hint_display_past_msgs#:#ルーム入室した際に表示する過去のメッセージ数。値を"0"にすると機能しません。
 chatroom#:#hint_enable_smilies#:#有効にすると構成したテキストシーケンスはアイコンに置き換わります。構成用のスマイルタグを参照。
 chatroom#:#hint_osd#:#有効にするとユーザは新しい招待に関してポップアップで通知されます。
 chatroom#:#hint_osd_interval#:#新規通知確認用のポーリングインターバル。低い数値にするとユーザへより頻繁に通知されますが、Webサーバーが処理しなければならないリクセスト数が増加します。
@@ -2652,6 +2657,7 @@ cmps#:#cmps_languages#:#言語
 cmps#:#cmps_main_dir#:#メインディレクトリ
 cmps#:#cmps_missing#:#不明
 cmps#:#cmps_module#:#モジュール
+cmps#:#cmps_must_installed#:#コンポーネントをインストールする必要があります。
 cmps#:#cmps_name#:#名前
 cmps#:#cmps_needs_newer_ilias_version#:#このプラグインバージョンは新しいILIASバージョンでのみ動作します。 ILIASをバージョンアップしてください。
 cmps#:#cmps_needs_newer_plugin_version#:#このILIASのバージョンには新しいプラグインバージョンが必要です。プラグインを更新してください。
@@ -2666,7 +2672,7 @@ cmps#:#cmps_plugin_deactivated#:#プラグインは解除されました。
 cmps#:#cmps_plugin_file#:#プラグインファイル
 cmps#:#cmps_plugin_lang_prefixes#:#プラグイン言語プレフィックス
 cmps#:#cmps_plugin_slot#:#プラグインスロット
-cmps#:#cmps_plugin_uninstalled#:#全ての言語とエントリーに関係するデータベースは削除されてプラグインは解除設定になりました。プラグインのディレクトリと完全にプラグインをアンインストールするための'Customizing'ディレクトリソースコードを削除できます。
+cmps#:#cmps_plugin_uninstalled#:#全ての言語とデータベース関連エントリーは削除されてプラグインは設定解除されました。完全にプラグインをアンインストールするために'Customizing'ディレクトリ内のプラグインのディレクトリとソースコードを削除できます。
 cmps#:#cmps_plugins#:#プラグイン
 cmps#:#cmps_refresh#:#リフレッシュ
 cmps#:#cmps_rep_object#:#オブジェクトタイプのリポジトリ
@@ -2752,7 +2758,7 @@ common#:#activation#:#期間調整
 common#:#active#:#アクティブ
 common#:#add#:#追加
 common#:#add_condition#:#新しい関連付けを作成
-common#:#add_entry#:#追加・編集エントり
+common#:#add_entry#:#追加・エントリー編集
 common#:#add_member#:#メンバーを追加
 common#:#add_new_user_defined_field#:#新規カスタムフィールドを追加
 common#:#add_note#:#メモを追加
@@ -3423,8 +3429,10 @@ common#:#fm_start#:#ファイルマネージャで開く
 common#:#fold#:#フォルダ
 common#:#fold_add#:#フォルダを追加
 common#:#fold_added#:#フォルダの追加
+common#:#fold_copy_threads_info#:#どの材料をコピー、リンク、省略するか確定してください。
 common#:#fold_edit#:#フォルダを編集
 common#:#fold_new#:#新規フォルダ
+common#:#fold_wizard_page#:#フォルダをコピー(Step 2/2)
 common#:#folder#:#フォルダ
 common#:#folders#:#フォルダ
 common#:#follow_link_to_read_mails#:#メールを読むには次のリンクをクリックします
@@ -4100,6 +4108,7 @@ common#:#obj_file#:#ファイル
 common#:#obj_file_duplicate#:#重複ファイル
 common#:#obj_file_inline#:#ラーニングモジュール ファイル
 common#:#obj_fold#:#フォルダ
+common#:#obj_fold_duplicate#:#フォルダをコピー
 common#:#obj_frm#:#フォーラム
 common#:#obj_frm_duplicate#:#フォーラムをコピー
 common#:#obj_frma#:#掲示板
@@ -4693,8 +4702,8 @@ common#:#set_skin_does_not_exist#:#選択のスキンはもうありません。
 common#:#set_style_does_not_exist#:#選択のスキンはもうありません。パーソナル設定内のスタイル変更または管理者へ連絡してください。現在の選択:
 common#:#setSystemLanguage#:#システム言語設定
 common#:#settings#:#設定
-common#:#settings_for_all_members#:#全コース/グループメンバーのグローバル設定
-common#:#settings_per_users#:#コース/グループメンバーごとの設定
+common#:#settings_for_all_members#:#メンバーへ自動的に通知
+common#:#settings_per_users#:#メンバーへ自動的に通知します。各メンバー個々に解除可能です。
 common#:#settings_saved#:#設定を保存
 common#:#setUserLanguage#:#ユーザ言語設定
 common#:#shib#:#Shibboleth
@@ -4785,7 +4794,7 @@ common#:#stat_selected#:#選択した
 common#:#statistic#:#統計値
 common#:#statistics#:#統計値
 common#:#status#:#状況
-common#:#status_no_permission#:#アクセス権限なし
+common#:#status_no_permission#:#付与されたアクセス権限なし
 common#:#step#:#ステップ
 common#:#street#:#町名・番地
 common#:#structure#:#建物
@@ -5614,6 +5623,13 @@ content#:#cont_localfile#:#ローカルファイル
 content#:#cont_localization#:#言語対応
 content#:#cont_localization_info#:#言語は事前定義のテキスト(例："前へ"や"次へ")に使用されます。
 content#:#cont_location#:#ロケーション
+content#:#cont_lpe_cas_login_form#:#CAS Login Form
+content#:#cont_lpe_language_selection#:#言語選択
+content#:#cont_lpe_login_form#:#Login Form
+content#:#cont_lpe_openid_login_form#:#OpenId Login Form
+content#:#cont_lpe_registration_link#:#新規登録リンク
+content#:#cont_lpe_shib_login_form#:#Shibboleth Login Form
+content#:#cont_lpe_user_agreement_link#:#使用許諾書リンク
 content#:#cont_lrs_settings#:#設定
 content#:#cont_lvalue#:#データ要素
 content#:#cont_maintenance#:#メンテナンス
@@ -7216,14 +7232,14 @@ dcl#:#dcl_any#:#どれか
 dcl#:#dcl_asc#:#昇順 (ASC)
 dcl#:#dcl_boolean#:#ブール代数
 dcl#:#dcl_boolean_desc#:# "True"または"False"用のチェックボックス
-dcl#:#dcl_cant_delete_last_table#:#このデータ収集のテーブルだけのためにこのテーブルを完全に削除することはできません。それはコンテンツで代わりに構造が削除されます。
+dcl#:#dcl_cant_delete_last_table#:#このデータ収集のテーブルだけのためにこのテーブルを完全に削除することはできません。そのコンテンツと構造が代わりに削除されます。
 dcl#:#dcl_change_notification_dcl_new_record#:#次のレコードが作成されました
 dcl#:#dcl_change_notification_dcl_update_record#:#次のレコードが更新されました
 dcl#:#dcl_change_notification_link#:#URL
 dcl#:#dcl_change_notification_subject#:#データ収集"%s"は変更されました
 dcl#:#dcl_change_why_you_receive_this_email#:#このデータ収集通知を有効にしているのでメッセージを受領します。
 dcl#:#dcl_changed_by#:#変更者
-dcl#:#dcl_checked#:#チェックしました。
+dcl#:#dcl_checked#:#チェック済
 dcl#:#dcl_comments#:#コメント
 dcl#:#dcl_comments_desc#:#エントリーのコメント数を表示します。
 dcl#:#dcl_confirm_delete_field#:#本当にこのフィールドを削除しますか?
@@ -7231,14 +7247,14 @@ dcl#:#dcl_confirm_delete_fields#:#本当にこのフィールドを削除しま�
 dcl#:#dcl_confirm_delete_record#:#このレコードを削除しますか?
 dcl#:#dcl_confirm_delete_records#:#このレコードを本当に削除しますか?
 dcl#:#dcl_confirm_delete_table#:#内容や階層の含まれるこのテーブルを本当に削除しますか?
-dcl#:#dcl_confirm_delete_view_text#:#このテーブルの記録ビュー定義は非可逆的に削除されても、レコードとフィールド自体は変わりません。
-dcl#:#dcl_confirm_delete_view_title#:#このビューを本当に削除しますか?
+dcl#:#dcl_confirm_delete_detailed_view_text#:#このテーブルの記録ビュー定義は非可逆的に削除されても、レコードとフィールド自体は変わりません。
+dcl#:#dcl_confirm_delete_detailed_view_title#:#このビューを本当に削除しますか?
 dcl#:#dcl_confirm_storing_records#:#有効にして入力を確認して下さい。
 dcl#:#dcl_confirm_storing_records_no_permission#:#以降は記録を変更する権利がありません。
 dcl#:#dcl_copy#:#データ収集を作成
 dcl#:#dcl_create_date#:#作成日
 dcl#:#dcl_create_field#:#フィールドを作成
-dcl#:#dcl_create_fields#:#リストフィールドタブ内に1個フィールドを作成する必要があります。
+dcl#:#dcl_create_fields#:#”表”タブの表をクリックして”新規フィールド追加”ボタンを使い新しいフィールドを作成
 dcl#:#dcl_creation_date#:#作成日
 dcl#:#dcl_creation_date_description#:#エントリが作成された日付
 dcl#:#dcl_datatype#:#データタイプ
@@ -7267,12 +7283,12 @@ dcl#:#dcl_edit_perm#:#アクセス権変更エントリ
 dcl#:#dcl_edit_record#:#レコードを編集
 dcl#:#dcl_edit_table#:#テーブル設定を編集
 dcl#:#dcl_editable_in_table_gui#:#テーブルビューへ投票してください。
-dcl#:#dcl_empty_view#:#このビューを削除
-dcl#:#dcl_empty_view_success#:#ビュー定義は正しく削除されました。
+dcl#:#dcl_empty_detailed_view#:#このビューを削除
+dcl#:#dcl_empty_detailed_view_success#:#ビュー定義は正しく削除されました。
 dcl#:#dcl_err_formula_field_not_found#:#タイトル'%s'のフィールドが見つかりませんでした
 dcl#:#dcl_error_parsing_expression#:#構文解析式エラー
 dcl#:#dcl_export_enabled#:#全ユーザへエクスポート機能を許可する
-dcl#:#dcl_export_enabled_desc#:#全てのユーザはこの表のデータをエクスポートできます。フィールドがエクスポートされる表全体を明示する必要があります。
+dcl#:#dcl_export_enabled_desc#:#全てのユーザはこの表のデータをエクスポートできます。どのフィールドをエクスポートさせるのか表全体に明示する必要があります。
 dcl#:#dcl_export_finished#:#エクスポートを終了しました
 dcl#:#dcl_export_started#:#非同期のエクスポートを開始しました
 dcl#:#dcl_field_datatype#:#フィールドデータタイプ
@@ -7300,17 +7316,17 @@ dcl#:#dcl_ilias_reference_desc#:#ILIASオブジェクト選択用の検索フィ
 dcl#:#dcl_ilias_reference_link#:#テーブルビュー内のリンクとして表示
 dcl#:#dcl_import#:#データ収集をインポート
 dcl#:#dcl_import_enabled#:#全てのユーザへインポート機能を許可
-dcl#:#dcl_import_enabled_desc#:#書き込みアクセスを要求している限りは全てのユーザはテーブルへデータをインポートできます。
+dcl#:#dcl_import_enabled_desc#:#書き込みアクセス権が必須になっていると全てのユーザはテーブルへデータをインポートできます。
 dcl#:#dcl_import_records .xls#:#Excelインポート
 dcl#:#dcl_import_terminated#:#インポートが完了しました。エントリが追加されました。
-dcl#:#dcl_in_export#:#エクスポート中
+dcl#:#dcl_in_export#:#エクスポートする
 dcl#:#dcl_invalid_regex_config#:#このフィールド用に構成される通常表現は有効です。障害を解決するには設定を確認してください。
 dcl#:#dcl_last_edit_by#:#最終変更者
 dcl#:#dcl_last_edited_by#:#最終編集者
 dcl#:#dcl_last_edited_by_description#:#このエントリを最後に編集したユーザ
 dcl#:#dcl_last_update#:#最終編集
 dcl#:#dcl_last_update_description#:#エントリの日付が最終編集です
-dcl#:#dcl_learning_progress#:#ビューワーへリンクされたモジュールの学習進捗を表示
+dcl#:#dcl_learning_progress#:#ビューワーのリンクされたモジュールの進捗を表示
 dcl#:#dcl_legend_placeholders#:#プレースフォルダ
 dcl#:#dcl_length#:#長さ
 dcl#:#dcl_length_info#:#(200文字以上用には追加のテキストエリアオプションを使用)
@@ -7320,7 +7336,7 @@ dcl#:#dcl_limited#:#追加・編集・削除限定期間
 dcl#:#dcl_limited_desc#:#ユーザは指定する期間内に限りエントリーを編集できます。
 dcl#:#dcl_link_detail_page#:#詳細ページへのリンクエントリー
 dcl#:#dcl_list_fields#:#フィールドを一覧表示
-dcl#:#dcl_locked#:#ロック中
+dcl#:#dcl_locked#:#ロックする
 dcl#:#dcl_locked_tooltip#:#ユーザ編集用のこのフィールドを無効にします。'編集設定'のアクセス権役割は含みません。
 dcl#:#dcl_manage#:#管理
 dcl#:#dcl_max_digits#:#最大桁数
@@ -7330,7 +7346,7 @@ dcl#:#dcl_mob#:#メディアオブジェクト
 dcl#:#dcl_mob_desc#:#イメージ、オーディオ、ビデオファイルアップロード用のフィールド。データ収集の際に直接表示されます。表示するデータタイプ: %s
 dcl#:#dcl_msg_field_modified#:#フィールドを更新しました
 dcl#:#dcl_msg_fields_deleted#:#フィールドを削除しました
-dcl#:#dcl_msg_info_alternatives#:#レコードを表示する権利がないかこのビュー用に定義された詳細ビューがありません。とにかくレコードを表示するには下記のリストからビューを選択してください。
+dcl#:#dcl_msg_info_alternatives#:#レコードを表示する権利がないかこのビュー用に定義された詳細ビューがありません。レコードを表示するには下記のリストからビューを選択してください。
 dcl#:#dcl_msg_mc_to_sc_confirmation#:#複数選択からシングル選択への切替えは既存のエントリーのデータ損失へつながる可能性があります。本当に続けますか?
 dcl#:#dcl_msg_no_perm_edit#:#このレコードの編集アクセス権がありません
 dcl#:#dcl_msg_no_perm_view#:#このレコードを表示するアクセス権がありません
@@ -7354,21 +7370,22 @@ dcl#:#dcl_no_export_content_available#:#エクスポート可能なデータが�
 dcl#:#dcl_no_export_data_available#:#エクスポート用のデータまたはフィールドがありません
 dcl#:#dcl_no_export_fields_available#:#エクスポート用の有効なフィールドがありません。<a href="%s">表設定</a>内にエクスポート可能なフィールドを一つはマークします。
 dcl#:#dcl_no_fields_yet#:#このテーブルに定義されるフィールドがないのでまだ何もエントリを作成できません。
+dcl#:#dcl_no_read_access_on_any_standard_view#:#表のどのスタンダードビューへも読込みアクセス権がありません。
 dcl#:#dcl_no_search_results_found_for#:#モジュールが見つかりません
 dcl#:#dcl_no_such_reference#:#レファレンステーブル中に次の値はありません:
 dcl#:#dcl_no_warnings#:#警告無しにインポートを完了しました。
-dcl#:#dcl_not_checked#:#未チェックです。
+dcl#:#dcl_not_checked#:#未チェック
 dcl#:#dcl_not_supported_in_import#:#このタイプのフィールドはインポートではサポートされません。
 dcl#:#dcl_notification_activate_dcl#:#データ収集用の通知を有効にする
 dcl#:#dcl_notification_activated#:#通知が有効化されました
 dcl#:#dcl_notification_deactivate_dcl#:#データ収集用の通知を解除する
 dcl#:#dcl_notification_deactivated#:#通知が解除されました
-dcl#:#dcl_notification_info#:#ユーザ用の個別通知機能を使用可能にします。
+dcl#:#dcl_notification_info#:#ユーザ個々に通知を確定
 dcl#:#dcl_notimage_exception#:#ファイルは画像である必要があります。
 dcl#:#dcl_noturl_exception#:#リンク(http://で始まる)を入力する必要があります。
 dcl#:#dcl_number#:#整数
 dcl#:#dcl_number_desc#:#整数値(最大9桁)用のフィールドです。小数や分数ではありません。
-dcl#:#dcl_online_info#:#データ収集のみオンラインの場合にはユーザはデータ収集をを使用できます。
+dcl#:#dcl_online_info#:#データ収集がオンラインの場合に限りユーザはデータ収集を使用できます。
 dcl#:#dcl_order#:#順
 dcl#:#dcl_own_entries#:#自己エントリーのみ
 dcl#:#dcl_owner#:#オーナ
@@ -7387,6 +7404,7 @@ dcl#:#dcl_public_comments#:#レコードのパブリックコメントを利用�
 dcl#:#dcl_public_comments_desc#:#ユーザは表のエントリーにコメントできます。
 dcl#:#dcl_rating#:#星評価
 dcl#:#dcl_rating_desc#:#ユーザは5つ星までのエントリを評価できます。
+dcl#:#dcl_rbac_roles_without_read_access_on_any_standard_view#:#次のrbac役割にはデータ収集の読込みアクセス権はありますが表のどのスタンダードビューへも読込みアクセス権はありません。
 dcl#:#dcl_record#:#エントリー
 dcl#:#dcl_record_deleted#:#エントリーを削除しました
 dcl#:#dcl_record_from_total#:#%d 中 %d
@@ -7404,7 +7422,7 @@ dcl#:#dcl_save_confirmation#:#確認を保存
 dcl#:#dcl_save_confirmation_desc#:#ユーザは新しいデータ収集エントリを確認しなければなりません。
 dcl#:#dcl_save_order#:#順番を保存
 dcl#:#dcl_save_record#:#エントリを保存
-dcl#:#dcl_select#:#プレゼンテーション用に選択
+dcl#:#dcl_select#:#プレゼンテーションを選択
 dcl#:#dcl_selection_options#:#オプション
 dcl#:#dcl_selection_type#:#タイプ
 dcl#:#dcl_selection_type_combobox#:#Combobox (Dropdown)
@@ -7455,14 +7473,14 @@ dcl#:#dcl_update_record#:#レコードを更新
 dcl#:#dcl_url#:#URL
 dcl#:#dcl_view_own_records_perm#:#自己エントリーのみ表示
 dcl#:#dcl_view_viewdefinition#:#ビュー定義
-dcl#:#dcl_visible#:#テーブル内を表示
+dcl#:#dcl_visible#:#全ユーザを表示
 dcl#:#dcl_visible_desc#:#ユーザはこの表へアクセスできます。
 dcl#:#dcl_width#:#幅
 dcl#:#dcl_wrong_input_type#:#入力したテキストはこのフィールドの定義(タイプ間違い)と一致しません。
 dcl#:#dcl_wrong_length#:#入力したテキストは長すぎます
 dcl#:#dcl_wrong_regex#:#入力したテキストはこのフィールドの定義(正規表現)と一致しません。
 dcl#:#dlc_xls_async_export#:#非同期XLSXエクスポート
-dcl#:#fieldtitle_allow_chars#:#利用可能な文字: %s
+dcl#:#fieldtitle_allow_chars#:#使用できない文字: %s
 didactic#:#activate_exclusive_template#:#グレイアウトの既定値
 didactic#:#activate_exclusive_template_info#:#標準テンプレートはこのテンプレートを有効にしていると利用できません。
 didactic#:#activate_local_didactic_template#:#アプリケーションの範囲
@@ -8117,6 +8135,14 @@ file#:#file_download#:#ファイルをダウンロード
 file#:#file_import#:#ファイルをインポート
 file#:#file_new_version#:#新バージョンを作成
 file#:#file_new_version_info#:#新ファイルバージョンを作成します。旧バージョンは修正されません。
+file#:#file_suffix_custom_black#:#カスタム拡張子ブラックリスト
+file#:#file_suffix_custom_black_info#:#これらの拡張子は既定のホワイトリストから削除されます。
+file#:#file_suffix_custom_white#:#カスタム拡張子ホワイトリスト
+file#:#file_suffix_custom_white_info#:#これらの拡張子は初期値のホワイトリストへ追加されます。
+file#:#file_suffix_default_white#:#拡張子ホワイトリスト初期値
+file#:#file_suffix_default_white_info#:#承認済ファイル拡張子の初期値リスト
+file#:#file_suffix_overall_white#:#拡張子ホワイトリスト全般
+file#:#file_suffix_overall_white_info#:#承認済ファイル拡張子の全般リスト結果
 file#:#file_uploaded_by#:#アップロード者
 file#:#personal_workspace_disk_quota#:#パーソナルワークスペースのハードディスククォータ
 file#:#personal_workspace_quota_exceeded_warning#:#パーソナルワークスペースのディスククォータを越えています。
@@ -9068,14 +9094,14 @@ mail#:#mail_salutation_m#:#こんにちは
 mail#:#mail_salutation_male#:#男性向けのプレースフォルダ[MAIL_SALUTATION]用の出力
 mail#:#mail_salutation_n#:#こんにちは
 mail#:#mail_saved#:#メッセージは保存されました
-mail#:#mail_second_email#:#第2emailアドレス
+mail#:#mail_second_email#:#第2メールアドレス
 mail#:#mail_sel_users#:#選択したユーザへメールを送信
 mail#:#mail_select_attachment#:#ダウンロード用の添付ファイルを選択してください。
 mail#:#mail_select_course#:#コースを一つは選択してください。
 mail#:#mail_select_group#:#グループを一つは選んでください。
 mail#:#mail_select_one_entry#:#エントリーを一つ選択しなければなりません
 mail#:#mail_select_one_file#:#ファイルを一つ選択しなければなりません
-mail#:#mail_send_html#:#外部email用のHTMLフレーム
+mail#:#mail_send_html#:#HTMLフレーム
 mail#:#mail_send_html_info#:#有効にすると外部emailのボディーがHTMLフレーム内へ埋め込まれます。対応するテンプレートは './Customizing/global/skin/[SKIN]/Services/Mail/tpl.html_mail_template.html' へ'./Services/Mail/templates/default/tpl.html_mail_template.html' をコピーしてカスタマイズすることができます。
 mail#:#mail_serial_letter_placeholders#:#シリアルレタープレースフォルダ
 mail#:#mail_settings_external_frm_head#:#外部email
@@ -9112,7 +9138,7 @@ mail#:#mail_system_usr_env_from_addr#:#テクニカル送信者
 mail#:#mail_system_usr_env_from_addr_info#:#このフィールドを空にしておくとSMTP転送が有効の場合に送信者のemailアドレスが使用されます。そうでなければ、管理者責任でこの値を構成することです。
 mail#:#mail_system_usr_from_addr#:#送信者email(From)
 mail#:#mail_system_usr_from_name#:#送信者フルネーム(From)
-mail#:#mail_system_usr_from_name_info#:#プレースフォルダー [FULLNAME], [FIRSTNAME] , [LASTNAME]を使用することができます。それらはemail作成されるのそれぞれの日付で置き換えられます。
+mail#:#mail_system_usr_from_name_info#:#プレースフォルダー [FULLNAME], [FIRSTNAME] , [LASTNAME]を使用することができます。それらはemailイニシエータのそれぞれの日付で置き換えられます。
 mail#:#mail_template_client#:#Textテンプレート
 mail#:#mail_template_client_info#:#利用可能なTextテンプレートの一つを選択してそのプレースフォルダを作成します。Textテンプレートを選択するとこのフォームの本文と件名(Textテンプレート内にある場合)が生成されます。
 mail#:#mail_template_context#:#コンテキスト
@@ -10337,6 +10363,7 @@ pdfgen#:#header_show_pages#:#ページ番号を表示
 pdfgen#:#header_type#:#ヘッダー
 pdfgen#:#image_scale#:#イメージスケール
 pdfgen#:#javascript_delay#:#Javascript 遅延
+pdfgen#:#javascript_delay_info#:#JavaScriptがレンダーページコンテンツに使用の際はＰＤＦ内のコンテンツ表示を確認するために遅延が発生します。
 pdfgen#:#margin#:#Margin
 pdfgen#:#margin_bottom#:#Margin bottom
 pdfgen#:#margin_left#:#Margin left
@@ -11665,7 +11692,7 @@ sahs#:#sahs_chapter#:#章
 sahs#:#sahs_choose_page_template#:#ページテンプレートを選択
 sahs#:#sahs_choose_pages_chap_scos_ass_only#:#ページ、SCO、資産、章のどれか一つを選択してください。
 sahs#:#sahs_choose_special_page#:#スペシャルページを選択
-sahs#:#sahs_copy#:#SCORM学習うモジュールをコピー
+sahs#:#sahs_copy#:#SCORM学習モジュールをコピー
 sahs#:#sahs_desc_objectives#:#説明/目標
 sahs#:#sahs_glo_info#:#用語集へのリンクはサポートされていない事に注意願います。
 sahs#:#sahs_hide_objectives_page#:#説明/目標ページを非表示
@@ -12329,7 +12356,7 @@ style#:#adapt_icon#:#アイコンを適合
 style#:#adapt_icon_description#:#アイコンを適合またはアイコン自体を変更します。
 style#:#adapt_icons#:#アイコンカラーを適合
 style#:#adapt_icons_description#:#スキンイメージフォルダ内のSVGアイコン内に見つからない全てのアイコンはここにリストされます。一つカラーを変更するとこのカラーに含まれる全てのアイコンが一度変更されます。
-style#:#adapt_less#:#レッグを適用
+style#:#adapt_less#:#Lessを適用
 style#:#adapt_less_description#:#これは選択したスキン内で使用されるvariables.lessファイルの全ての変数のない直接表現です。変数名と説明はこのファイルから直接描写されるのでオリジナル言語内でのみ利用可能です。選択のスタイルは更新・変数再設定により完全に再コンパイルされます。再設定変数は既定のdelosスタイルの完全コピーが生成されます。
 style#:#add_substyle#:#サブスタイルを追加
 style#:#add_system_style#:#システムスタイルを追加
@@ -12338,7 +12365,7 @@ style#:#blue_color#:#ブルーカラー
 style#:#blue_colors#:#ブルーカラー
 style#:#blue_colors_description#:#ブルーカラー説明
 style#:#can_not_read_less_file#:#less fileを読込む事ができません。 Path:
-style#:#cant_deactivate_default_style#:#既定のスタイルを解除できません。
+style#:#cant_deactivate_default_style#:#Defaultのスタイルを解除できません。
 style#:#cant_delete_activated_style#:#アクティブスタイルを解除できません。
 style#:#cant_delete_if_users_assigned#:#ユーザがまだ割当てられているとスタイルを削除できません。
 style#:#cant_delete_style_with_substyles#:#サブスタイル付きのスタイルは削除できません。
@@ -12348,15 +12375,15 @@ style#:#color_changed_from#:#変更前のカラー:
 style#:#color_changed_to#:#to:
 style#:#color_reset#:#アイコンの色はリセットされました。キャッシング表示されてから変更になるかもしれない事に要注意。ブラウザーキャッシュをクリアする必要があるかもしれません
 style#:#color_update#:#アイコンの色は更新されました。キャッシング表示されてから変更になるかもしれない事に要注意。ブラウザーキャッシュをクリアする必要があるかもしれません。
-style#:#default_style_set_to#:#既定のシステムスタイルを設定した先:
-style#:#dir_copied_from#:#ディレクトリをコピーした元:
+style#:#default_style_set_to#:#Defaultのシステムスタイルを設定先:
+style#:#dir_copied_from#:#ディレクトリのコピー元:
 style#:#dir_deleted#:#次のディレクトリは削除されました:
 style#:#dir_preserved_linked#:#保存したリンク:
 style#:#directory_created#:#作成したディレクトリ:
 style#:#documentation#:#ドキュメンテーション
 style#:#edit_by_color#:#カラーで編集
 style#:#edit_by_icon#:#アイコンで編集
-style#:#enable_system_styles_management_no_write_perm#:#システムスタイル管理は有効ですがILIASはCustomizing/global/skinフォルダの書込みアクセス権がありません。 よって新しいスタイルは作成・編集できません。
+style#:#enable_system_styles_management_no_write_perm#:#システムスタイル管理は有効ですがILIASはCustomizing/global/skinフォルダの書込みアクセス権がありません。よって新しいスタイルは作成・編集できません。
 style#:#entries_reloaded#:#すべてのエントリーが再読込みされました。
 style#:#file_deleted#:#次のファイルは削除されました:
 style#:#font_dir#:#フォントディレクトリ
@@ -12369,18 +12396,18 @@ style#:#grey_color#:#グレイカラー
 style#:#grey_colors#:#グレーカラー
 style#:#grey_colors_description#:#グレイカラー説明
 style#:#icons#:#アイコン
-style#:#icons_gallery#:#アイコンギャナリー
+style#:#icons_gallery#:#アイコンギャラリー
 style#:#image_dir#:#イメージディレクトリ
 style#:#image_dir_description#:#スキンのイメージ(多くはアイコン)を保存するフォルダ。このディレクトリはスタイルとこのスキンのサブスタイルと共有できます。
 style#:#in_main_less_file#:#メインlessファイルのシステムスタイル内部へインポートできません:
 style#:#invalid_less_path#:#提供のlessc pathは無効かwebサーバが読込んでlesscを実行する適切なアクセス権がありません。Lessc (またはlessc pathによりポイントされるリンクされたファイル)は読み込み可能でwebサーバにより実行可能である必要があります。
-style#:#ks_documentation_of_style#:#Kitchen Sink documentation of style:###31 08 2017 new variable
-style#:#ks_documentation_of_substyle#:#Kitchen Sink documentation of sub style:###31 08 2017 new variable
+style#:#ks_documentation_of_style#:#スタイルの一切合切(Kitchen Sink)ドキュメント
+style#:#ks_documentation_of_substyle#:#サブスタイルの一切合切(Kitchen Sink)ドキュメント
 style#:#less#:#Less
 style#:#less_can_not_be_modified#:#Lessは修正できません
 style#:#less_compile_failed#:#lessファイルのコンパイル中に何か間違いがあります。LessがインストールされてILIASセットアップ中に正しくpath設定されていますか? オリジナルエラー:
-style#:#less_file_reset#:#少数はリセットされました。キャッシング表示されてから変更になるかもしれない事に要注意。ブラウザーキャッシュをクリアする必要があるかもしれません。
-style#:#less_file_updated#:#less変数が更新さｒました。
+style#:#less_file_reset#:#Lessはリセットされました。表示が変わるまでにはキャッシングの影響があるかもしれない事に注意願います。ブラウザーキャッシュのクリアが必要なことがあります。
+style#:#less_file_updated#:#less変数が更新されました。
 style#:#less_less_installation_detected#:#Lessインストールを確認した位置:
 style#:#less_variables_file_not_included#:#less変数ファイル:
 style#:#manage_system_styles#:#システムスタイルを管理
@@ -12481,8 +12508,8 @@ style#:#sty_cursor#:#カーソル
 style#:#sty_custom#:#カスタム
 style#:#sty_custom_par#:#カスタムパラメータ
 style#:#sty_custom_par_info#:# "パラメータ値"フォーマットを使いカスタムCSSパラメータを追加します。
-style#:#sty_default#:#規定値
-style#:#sty_default_style#:#スタイル初期設定
+style#:#sty_default#:#Default
+style#:#sty_default_style#:#Defaultスタイル
 style#:#sty_del_template#:#テンプレートとクラスを削除
 style#:#sty_del_template_keep_classes#:#削除し、スタイルのクラスを維持
 style#:#sty_delete_other_selected#:#続ける
@@ -12730,17 +12757,17 @@ style#:#style_name_description#:#スタイル名は可読形式でスタイル�
 style#:#style_not_deleted#:#スタイルは地祇の理由により削除できませんでした:
 style#:#style_page_layout_module_portfolio#:#ポートフォリオ
 style#:#style_page_layout_module_scorm#:#Scorm
-style#:#styles_not_deleted#:#スタイルは地祇の理由により削除できませんでした:
+style#:#styles_not_deleted#:#スタイルは次の理由により削除できませんでした:
 style#:#sub_style#:#サブスタイル
 style#:#sub_style_id#:#サブスタイルID
 style#:#sub_style_id_description#:#サブスタイルIDはcussやスキンフォルダ内部に位置するlessのようなサブスタイル特定ファイル用の名前として使用されます。文字、数値、ハイフォンまたは下線文字に限りスタイルIDに使用されます。
 style#:#sub_style_name#:#サブスタイル名
 style#:#sub_style_name_description#:#サブスタイル名は可読形式でスタイルのアプリケーションエリアの説明に使用することができます。スキンの許容選択全UIエレメント内に表示されます。
 style#:#sub_style_parent_style_description#:#サブスタイルは一つの親スタイルだけに割当てられます。親スタイルがこのユーザに限り割当てられていると特定のユーザのみにしか表示されません。サブスタイルの親スタイルはこのサブスタイルが作成された後は変更できません。
-style#:#system_style_activation#:#システムスタイルが有効になりました
-style#:#system_style_activation_description#:#この設定が有効(ユーザ管理/設定/標準フィールド/スキン規定を参照)の場合、有効なシステムスタイルはユーザが選択していてもユーザへ割当てることができます。
-style#:#system_style_default_description#:#既定のシステムスタイルとしてこのスタイルを設定します。現在のユーザがスタイルを割当てていないかユーザがログインしていないと既定のシステムスタイルを使用します。
-style#:#system_style_personal_description#:#パーソナルシステムスタイルとしてこのスタイルを設定します。これは現在実行されている変化を見るには便利です。
+style#:#system_style_activation#:#システムスタイルの有効化
+style#:#system_style_activation_description#:#この設定(ユーザ管理/設定/標準フィールド/Default Skinを参照)が有効の場合、有効なシステムスタイルはユーザまたはユーザの選択したものへ割当てることができます。
+style#:#system_style_default_description#:#既定のシステムスタイルとしてこのスタイルを設定します。現在のユーザがスタイルを割当てていないあるいはユーザがログインしていなくても既定のシステムスタイルを使用します。
+style#:#system_style_personal_description#:#パーソナルシステムスタイルとしてこのスタイルを設定します。これは現在実行されているものの変化の確認に便利です。
 style#:#to#:#to:
 style#:#update_colors#:#カラーを更新
 style#:#update_icon#:#アイコンを更新
@@ -12930,7 +12957,7 @@ survey#:#invitation_mode_desc#:#サーベイへのリンク参照がユーザの
 survey#:#invitation_off#:#どのデスクトップにもしない。
 survey#:#invited_users#:#ユーザを選択
 survey#:#label#:#ラベル
-survey#:#label_info#:#以降のデータの処理(例
+survey#:#label_info#:#今後のデータ処理用の代わりの識別子(例 SPSS)
 survey#:#language_changed#:#言語が変更されました
 survey#:#last_update#:#最終更新
 survey#:#layout#:#レイアウト
@@ -13599,7 +13626,7 @@ trac#:#trac_learning_progress_of#:#%sの学習進捗
 trac#:#trac_learning_progress_settings_info#:#拡張データをアクティブ
 trac#:#trac_log_info#:#最終集計: %s (未処理項目: %s)
 trac#:#trac_log_info_link#:#Update
-trac#:#trac_long_system_load#:#長期性
+trac#:#trac_long_system_load#:#長期間
 trac#:#trac_lp_determination#:#学習進捗の決定
 trac#:#trac_lp_determination_info_crs#:#全体的な学習進捗ステータスを決定するアイテムを選択します。
 trac#:#trac_lp_determination_info_crs_tutor#:#この選択では学習進捗状況へ接続されません。
@@ -13720,11 +13747,11 @@ trac#:#trac_session_statistics_mode_today#:#今日
 trac#:#trac_session_statistics_mode_week#:#週
 trac#:#trac_session_statistics_mode_year#:#年
 trac#:#trac_session_statistics_no_data#:#この統計にはデータがありません。
-trac#:#trac_sessions_closed#:#退場
-trac#:#trac_sessions_opened#:#入場
+trac#:#trac_sessions_closed#:#退室
+trac#:#trac_sessions_opened#:#入室
 trac#:#trac_settings#:#設定
 trac#:#trac_settings_saved#:#設定が保存されました。
-trac#:#trac_short_system_load#:#短期性
+trac#:#trac_short_system_load#:#短期間
 trac#:#trac_show_graph#:#グラフを表示
 trac#:#trac_show_repository_views#:#リポジトリの変更
 trac#:#trac_show_repository_views_info#:#Infoページ上のリポジトリオブジェクト用に追跡情報を表示します。
@@ -13981,7 +14008,7 @@ wiki#:#wiki_new_pages#:#新規ページ
 wiki#:#wiki_news_page_changed#:#Wikiページは更新されました。
 wiki#:#wiki_news_page_created#:#新規Wikページが作成されました。
 wiki#:#wiki_no_page_found#:#Wikiページには検索用語"$1"がありませんでした。
-wiki#:#wiki_no_search_term#:#検索用語が入力されていｊません。wikiの全ページは以下にリストされます。
+wiki#:#wiki_no_search_term#:#検索用語が入力されていません。wikiの全ページは以下にリストされます。
 wiki#:#wiki_no_start_page#:#Wikiに有効な開始ページがありません。
 wiki#:#wiki_notgraded#:#未評価
 wiki#:#wiki_notification_activate_page#:#ページ通知を有効
@@ -14088,7 +14115,7 @@ wiki#:#wiki_templ_add_to_page#:#既存ページへの追加動作は可能
 wiki#:#wiki_templ_new_pages#:#ページ作成可能
 wiki#:#wiki_template_added#:#テンプレートページが追加されました。
 wiki#:#wiki_template_status_removed#:#テンプレートステータスが削除されました。
-wiki#:#wiki_unblock_page#:#ページブロックしない
+wiki#:#wiki_unblock_page#:#書込みアクセスを許可
 wiki#:#wiki_unhide_meta_adv_records#:#追加のプロパティを表示
 wiki#:#wiki_what_links_here#:#ここへのリンクは?
 wiki#:#wiki_what_links_to_page#:#ページ "%s"へのリンクは?
@@ -14154,25 +14181,21 @@ wsp#:#wsp_type_scov#:#証明書: SCORM
 wsp#:#wsp_type_tstv#:#証明書: テスト
 wsp#:#wsp_type_webr#:#Webリンク
 wsp#:#wsp_type_wfld#:#フォルダ
-assessment#:#false#:#False###15 03 2018 new variable
-assessment#:#log_user_solution_willingly_deleted#:#User deleted the answer.###15 03 2018 new variable
-assessment#:#true#:#True###15 03 2018 new variable
-content#:#cont_lpe_login_form#:#Login Form###05 04 2018 new variable
-content#:#cont_lpe_cas_login_form#:#CAS Login Form###05 04 2018 new variable
-content#:#cont_lpe_shib_login_form#:#Shibboleth Login Form###05 04 2018 new variable
-content#:#cont_lpe_openid_login_form#:#OpenId Login Form###05 04 2018 new variable
-content#:#cont_lpe_registration_link#:#New Registration Link###05 04 2018 new variable
-content#:#cont_lpe_language_selection#:#Language Selection###05 04 2018 new variable
-content#:#cont_lpe_user_agreement_link#:#User Agreement Link###05 04 2018 new variable
-common#:#obj_fold_duplicate#:#Copy Folder###05 04 2018 new variable
-common#:#fold_wizard_page#:#Copy Folder (Step 2/2)###05 04 2018 new variable
-common#:#fold_copy_threads_info#:#Please decide which materials should be copied, linked or even omitted.###05 04 2018 new variable
-pdfgen#:#javascript_delay_info#:#If JavaScript is used to render page content, add a delay to make sure the content appears in the PDF. The standard delay of 200ms should suffice in most cases.###25 04 2018 new variable
-file#:#file_suffix_default_white#:#Default Suffix Whitelist###25 04 2018 new variable
-file#:#file_suffix_default_white_info#:#Default list of accepted file suffixes.###25 04 2018 new variable
-file#:#file_suffix_custom_black#:#Custom Suffix Blacklist###25 04 2018 new variable
-file#:#file_suffix_custom_black_info#:#These suffixes will be removed from the default whitelist.###25 04 2018 new variable
-file#:#file_suffix_custom_white#:#Custom Suffix Whitelist###25 04 2018 new variable
-file#:#file_suffix_custom_white_info#:#These suffixes will be added to the default whitelist.###25 04 2018 new variable
-file#:#file_suffix_overall_white#:#Overal Suffix Whitelist###25 04 2018 new variable
-file#:#file_suffix_overall_white_info#:#Resulting overall list of accepted file suffixes.###25 04 2018 new variable
+assessment#:#tst_non_avail_pool_msg_status_trashed#:#This question pool is trashed, when it gets removed from system permanently, the test is no longer able to synchronize questions from it.###25 07 2018 new variable
+rbac#:#rbac_log_operation_rmv#:#Removed Operation for "%s"###25 07 2018 new variable
+rbac#:#rbac_log_inheritance_rmv#:#Allowed Inheritance for "%s"###25 07 2018 new variable
+common#:#crs_list_reg#:#Registration###25 07 2018 new variable
+common#:#grp_list_reg#:#Registration###25 07 2018 new variable
+dcl#:#dcl_change_notification_dcl_delete_record#:#The following data record has been deleted###25 07 2018 new variable
+chatroom#:#chatroom_client_name#:#Name###25 07 2018 new variable
+chatroom#:#chatroom_client_name_info#:#Please enter a name for this ILIAS client. The entered string must be globally unique. Initially this value is set to the client id of the ILIAS client. If changed, the chat server must be restarted.###25 07 2018 new variable
+wiki#:#wiki_change_notification_body_new#:#the following wiki page was created###25 07 2018 new variable
+assessment#:#tst_answer_aggr_answer_header#:#Answer###29 08 2018 new variable
+assessment#:#tst_answer_aggr_frequency_header#:#Frequency###29 08 2018 new variable
+content#:#cont_resource_size_info#:#Without size declaration the size can be controlled by the content style. If neither a size is declared nor the content style contains a rule that determines the size, only images will be displayed in their default size.###29 08 2018 new variable
+mail#:#mail_system_usr_from_addr_info#:#Please enter the e-mail address to be put in the 'FROM' header. The 'FROM' header is used to display the sender in the recipient e-mail client. The e-mail address of the user sending an e-mail via ILIAS will be automatically put in the 'Reply-To' header.<br /><br />Examples: <span style="font-style: italic">info@institution.de</span> or <span style="font-style: italic">no-reply@institution.de</span>###29 08 2018 new variable
+mail#:#mail_system_sys_from_addr_info#:#Please enter the e-mail address to be put in the 'FROM' header. The 'FROM' header is used to display the sender in the recipient e-mail client.<br /><br />Examples: <span style="font-style: italic">info@institution.de</span> or <span style="font-style: italic">no-reply@institution.de</span>###29 08 2018 new variable
+cron#:#cro_job_rc_job_no_result#:#Cron job did not return a proper result###29 08 2018 new variable
+dcl#:#dcl_title_standardview#:#Standard View###29 08 2018 new variable
+chatroom#:#chat_osc_search_modal_info#:#Here you can search for users you would like to add to a conversation. If the search dialogue was opened within a group chat, the new user will be added to this chat. If you started the search within a 1:1 chat, a new group chat window will be opened. ###29 08 2018 new variable
+mob#:#mob_no_fixed_size_map_editing#:#Please define a fixed size for your image before using map areas. If your image is scaled by content style or other CSS rules, your map areas will not fit anymore.###29 08 2018 new variable

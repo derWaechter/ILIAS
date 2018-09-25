@@ -854,15 +854,29 @@ class ilInitialisation
 	/**
 	 * $lng initialisation
 	 */
-	protected static function initLanguage()
+	protected static function initLanguage($a_use_user_language = true)
 	{
+		global $DIC;
+
 		/**
 		 * @var $rbacsystem ilRbacSystem
 		 */
 		global $rbacsystem;
 
 		require_once 'Services/Language/classes/class.ilLanguage.php';
-		self::initGlobal('lng', ilLanguage::getGlobalInstance());
+
+		if($a_use_user_language)
+		{
+			if($DIC->offsetExists('lng'))
+			{
+				$DIC->offsetUnset('lng');
+			}
+			self::initGlobal('lng', ilLanguage::getGlobalInstance());
+		}
+		else
+		{
+			self::initGlobal('lng', ilLanguage::getFallbackInstance());
+		}
 		if(is_object($rbacsystem))
 		{
 			$rbacsystem->initMemberView();
@@ -1028,7 +1042,7 @@ class ilInitialisation
 			self::includePhp5Compliance();
 			
 			// language may depend on user setting
-			self::initLanguage();
+			self::initLanguage(true);
 			$GLOBALS['DIC']['tree']->initLangCode();
 
 			self::initInjector($GLOBALS['DIC']);
@@ -1141,6 +1155,9 @@ class ilInitialisation
 		self::handleMaintenanceMode();
 
 		self::initDatabase();
+
+		// init dafault language
+		self::initLanguage(false);
 		
 		// moved after databases 
 		self::initLog();		
@@ -1226,8 +1243,9 @@ class ilInitialisation
 	public static function resumeUserSession()
 	{
 		include_once './Services/Authentication/classes/class.ilAuthUtils.php';
-		if(ilAuthUtils::handleForcedAuthentication())
+		if(ilAuthUtils::isAuthenticationForced())
 		{
+			ilAuthUtils::handleForcedAuthentication();
 		}
 		
 		if(
@@ -1604,7 +1622,7 @@ class ilInitialisation
 			if(
 				$cmd == "showTermsOfService" || $cmd == "showClientList" || 
 				$cmd == 'showAccountMigration' || $cmd == 'migrateAccount' ||
-				$cmd == 'processCode' || $cmd == 'showLoginPage' || $cmd == 'doStandardAuthentication'
+				$cmd == 'processCode' || $cmd == 'showLoginPage' || $cmd == 'doStandardAuthentication' || $cmd == 'doCasAuthentication'
 			)
 			{
 				ilLoggerFactory::getLogger('auth')->debug('Blocked authentication for cmd: ' . $cmd);
@@ -1621,7 +1639,7 @@ class ilInitialisation
 		}
 
 		if($a_current_script == 'goto.php' && in_array($_GET['target'], array(
-			'usr_registration', 'usr_nameassist', 'usr_pwassist'
+			'usr_registration', 'usr_nameassist', 'usr_pwassist', 'usr_agreement'
 		)))
 		{
 			ilLoggerFactory::getLogger('auth')->debug('Blocked authentication for goto target: ' . $_GET['target']);

@@ -1474,28 +1474,6 @@ class ilObjUser extends ilObject
 	}
 
 	/**
-	* check wether user has accepted user agreement
-	*/
-	function hasAcceptedUserAgreement()
-	{
-		/**
-		 * @var ilRbacReview
-		 */
-		global $rbacreview;
-
-		if(
-			null != $this->agree_date ||
-			'root' == $this->login ||
-			in_array($this->getId(), array(ANONYMOUS_USER_ID, SYSTEM_USER_ID)) ||
-			$rbacreview->isAssigned($this->getId(), SYSTEM_ROLE_ID)
-		)
-		{
-			return true;
-		}
-		return false;
-	}
-
-	/**
 	* set login / username
 	* @access	public
 	* @param	string	username
@@ -4939,13 +4917,12 @@ class ilObjUser extends ilObject
 
 		require_once 'Services/TermsOfService/classes/class.ilTermsOfServiceHelper.php';
 		if (ilTermsOfServiceHelper::isEnabled()) {
-			$adminRoleUserIds = array_flip($rbacreview->assignedUsers(SYSTEM_ROLE_ID));
-			$users = array_filter($users, function($user) use ($adminRoleUserIds) {
+			$users = array_filter($users, function($user) {
 				if ($user['agree_date'] || $user['user_id'] == SYSTEM_USER_ID || 'root' === $user['login']) {
 					return true;
 				}
 
-				return isset($adminRoleUserIds[$user['user_id']]);
+				return false;
 			});
 
 			$log->debug("TOS filtered to users: ".count($users));
@@ -5473,19 +5450,13 @@ class ilObjUser extends ilObject
 	 */
 	public function hasToAcceptTermsOfService()
 	{
-		/**
-		 * @var ilRbacReview
-		 */
-		global $rbacreview;
-
 		require_once 'Services/TermsOfService/classes/class.ilTermsOfServiceHelper.php';
 
 		if(
 			ilTermsOfServiceHelper::isEnabled() && 
 			null == $this->agree_date &&
 			'root' != $this->login &&
-			!in_array($this->getId(), array(ANONYMOUS_USER_ID, SYSTEM_USER_ID)) &&
-			!$rbacreview->isAssigned($this->getId(), SYSTEM_ROLE_ID)
+			!in_array($this->getId(), array(ANONYMOUS_USER_ID, SYSTEM_USER_ID))
 		)
 		{
 			return true;
